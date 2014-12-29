@@ -1,0 +1,2 @@
+@using Nop.Web.Framework;
+<link href="@Html.ResolveUrl("~/Themes/Christmas/Content/styles.css")" rel="stylesheet" type="text/css" />
