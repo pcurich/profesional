@@ -1,4 +1,4 @@
-﻿@model CustomerOrderListModel
+﻿@model Nop.Web.Models.Order.CustomerOrderListModel
 @{
     Layout = "~/Views/Shared/_ColumnsTwo.cshtml";
 
@@ -8,7 +8,7 @@
 @using Nop.Web.Models.Customer;
 @section left
 {
-    @Html.Partial("MyAccountNavigation", Model.NavigationModel, new ViewDataDictionary())
+    @Html.Action("CustomerNavigation", "Customer", new { selectedTabId = CustomerNavigationEnum.BackInStockSubscriptions })
 }
 <div class="page account-page order-list-page">
     <div class="page-title">
