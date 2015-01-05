@@ -1,4 +1,4 @@
-﻿@model CustomerBackInStockSubscriptionsModel
+﻿@model Nop.Web.Models.Catalog.CustomerBackInStockSubscriptionsModel
 @using Nop.Web.Extensions;
 @using Nop.Web.Models.Customer;
 @{    
@@ -8,7 +8,7 @@
 }
 @section left
 {
-    @Html.Partial("MyAccountNavigation", Model.NavigationModel, new ViewDataDictionary())
+    @Html.Action("CustomerNavigation", "Customer", new { selectedTabId = CustomerNavigationEnum.BackInStockSubscriptions })
 }
 <div class="page account-page back-in-stock-subscription-list-page">
     <div class="page-title">
