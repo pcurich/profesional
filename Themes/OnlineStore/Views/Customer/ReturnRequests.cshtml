@@ -1,4 +1,4 @@
-﻿@model CustomerReturnRequestsModel
+﻿@model Nop.Web.Models.Order.CustomerReturnRequestsModel
 @using Nop.Web.Models.Customer;
 @{
     Layout = "~/Views/Shared/_ColumnsTwo.cshtml";
@@ -8,7 +8,7 @@
 }
 @section left
 {
-    @Html.Partial("MyAccountNavigation", Model.NavigationModel, new ViewDataDictionary())
+    @Html.Action("CustomerNavigation", "Customer", new { selectedTabId = CustomerNavigationEnum.ReturnRequests })
 }
 <div class="page account-page return-request-list-page">
     <div class="page-title">
